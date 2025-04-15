@@ -4,14 +4,14 @@ import './globals.css';
 import Header from './Header';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://nerveglobal.com'),
+	metadataBase: new URL('https://thenerveclub.com'),
 	title: {
-		default: 'Nerve Global',
-		template: '%s | Nerve Global',
+		default: 'The Nerve Club',
+		template: '%s | The Nerve Club',
 	},
 	description: 'True to Web3.',
 	keywords: [
-		'Nerve Global',
+		'The Nerve Club',
 		'Web3',
 		'Blockchain',
 		'NFTs',
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
 		'DeFi',
 		'Decentralized Finance',
 	],
-	authors: [{ name: 'Nerve Global' }],
-	creator: 'Nerve Global',
+	authors: [{ name: 'The Nerve Club' }],
+	creator: 'The Nerve Club',
 	openGraph: {
-		title: 'Nerve Global',
+		title: 'The Nerve Club',
 		description: 'True to Web3.',
-		url: 'https://nerveglobal.com',
-		siteName: 'Nerve Global',
+		url: 'https://thenerveclub.com',
+		siteName: 'The Nerve Club',
 		images: [
 			{
-				url: 'https://nerveglobal.com/og.png',
+				url: 'https://thenerveclub.com/og.png',
 				width: 1200,
 				height: 630,
-				alt: 'Nerve Global Website Preview',
+				alt: 'The Nerve Club Website Preview',
 			},
 		],
 		locale: 'en_US',
@@ -52,10 +52,10 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Nerve Global',
+		title: 'The Nerve Club',
 		description: 'True to Web3.',
-		images: ['https://nerveglobal.com/og.png'],
-		creator: '@Nerve_Global',
+		images: ['https://thenerveclub.com/og.png'],
+		creator: '@TheNerveClub',
 	},
 	icons: {
 		icon: '/favicon.ico',
