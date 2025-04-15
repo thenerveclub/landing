@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #000000;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #000000;
+		--foreground: #171717;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: 'Baskervville', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* --- Glossy shimmer for elegant text --- */
+.shine-text-container {
+	position: relative;
+	display: inline-block;
+}
+
+.shine-text-base {
+	/* background: linear-gradient(350.21deg, rgba(166, 38, 211, 1) -13.99%, rgba(166, 38, 211, 0) 136.74%); */
+	/* background: rgba(166, 38, 211, 1); */
+	background: rgba(0, 0, 0, 0);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* font-family: 'True Lies', sans-serif; */
+	width: 100%;
+	/* text-shadow: 0 0 4px #a626d3; */
+}
+
+/* .shine-text-base {
+	color: rgba(255, 255, 255, 0.05);
+} */
+
+.shine-text-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: transparent;
+	background-image: repeating-linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0.02) 0%,
+		rgba(255, 255, 255, 0.02) 35%,
+		rgba(255, 255, 255, 0.2) 45%,
+		rgba(255, 255, 255, 0.5) 49%,
+		rgba(255, 255, 255, 0.2) 53%,
+		rgba(255, 255, 255, 0.02) 65%,
+		rgba(255, 255, 255, 0.02) 100%
+	);
+	background-size: 300% 100%;
+	background-repeat: repeat;
+	background-position: 0% 0%;
+	/* font-family: 'True Lies', sans-serif; */
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	animation: shine-text-loop 6s linear infinite;
+	pointer-events: none;
+}
+
+@keyframes shine-text-loop {
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: 100% 0%;
+	}
+}
