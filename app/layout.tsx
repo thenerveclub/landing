@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 		default: 'THE NERVE CLUB',
 		template: '%s | THE NERVE CLUB',
 	},
-	description: 'The platform for those who dare. Get challenged by Watchers, prove your nerve, and get paid. Your moment starts now.',
+	description: 'The platform for those who dare. Get challenged, prove your nerve, and get paid.',
 	keywords: [
 		'The Nerve Club',
 		'THE NERVE CLUB',
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
 	authors: [{ name: 'The Nerve Club' }],
 	creator: 'THE NERVE CLUB',
 	openGraph: {
-		title: 'THE NERVE CLUB',
-		description: 'The platform for those who dare. Get challenged by Watchers, prove your nerve, and get paid. Your moment starts now.',
+		title: 'Earn money, fame, and glory.',
+		description: 'The platform for those who dare. Get challenged, prove your nerve, and get paid.',
 		url: 'https://thenerveclub.com',
-		// siteName: 'THE NERVE CLUB',
+		siteName: 'THE NERVE CLUB',
 		images: [
 			{
 				url: 'https://thenerveclub.com/og.png',
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'THE NERVE CLUB',
-		description: 'The platform for those who dare. Get challenged by Watchers, prove your nerve, and get paid. Your moment starts now.',
+		title: 'Earn money, fame, and glory.',
+		description: 'The platform for those who dare. Get challenged, prove your nerve, and get paid.',
 		images: ['https://thenerveclub.com/og.png'],
 		creator: '@TheNerveClub',
 	},
