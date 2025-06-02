@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 		template: '%s | The Nerve Club',
 	},
 	description:
-		'The Nerve Club is the Web3 platform for creators who dare. Launch live challenges, get paid by your audience, and prove your nerve in real-time. Built on blockchain, powered by the creator economy.',
+		'The Nerve Club is the Web3 platform for creators who dare. Launch live challenges, get paid by your audience, and prove your nerve in real-time.',
 	keywords: [
 		'The Nerve Club',
 		'Nerve Club',
