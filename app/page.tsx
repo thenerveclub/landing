@@ -7,11 +7,11 @@ export default function Landing() {
 		<>
 			<div className="font-baskervville min-h-screen flex justify-center items-center p-0">
 				<div className="flex flex-col items-center justify-center w-[80%] cursor-default text-center sm:w-[95%]">
-					<div className="shine-text-container text-2xl xl:text-4xl xxl:text-6xl font-light uppercase mb-0">
+					<div className="shine-text-container text-3xl xl:text-5xl xxl:text-7xl font-light uppercase mb-0">
 						<span className="shine-text-base">The</span>
 						<span className="shine-text-overlay">The</span>
 					</div>
-					<div className="shine-text-container text-4xl xl:text-6xl xxl:text-8xl font-light uppercase mb-10">
+					<div className="shine-text-container text-5xl xl:text-7xl xxl:text-9xl font-light uppercase mb-10">
 						<span className="shine-text-base">Nerve Club</span>
 						<span className="shine-text-overlay">Nerve Club</span>
 					</div>
