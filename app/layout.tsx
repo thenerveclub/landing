@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 	creator: 'THE NERVE CLUB',
 	openGraph: {
 		title: 'Earn money, fame, and glory.',
-		description: 'The platform for those who dare. Get challenged and prove your nerve by taking on dares.',
+		description: 'The platform for those who dare. Get challenged and prove your nerve by taking on wild dares.',
 		url: 'https://thenerveclub.com',
 		siteName: 'THE NERVE CLUB',
 		images: [
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Earn money, fame, and glory.',
-		description: 'The platform for those who dare. Get challenged and prove your nerve by taking on dares.',
+		description: 'The platform for those who dare. Get challenged and prove your nerve by taking on wild dares.',
 		images: ['https://thenerveclub.com/og.png'],
 		creator: '@TheNerveClub',
 	},
