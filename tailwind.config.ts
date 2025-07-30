@@ -1,31 +1,52 @@
-import type { Config } from 'tailwindcss';
+/** @type {import('tailwindcss').Config} */
 
-export default {
-	darkMode: 'class',
-	content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+module.exports = {
+	darkMode: 'class', // Enable dark mode via "class"
+	content: [
+		'./app/**/*.{js,ts,jsx,tsx}', // Next.js App Directory
+		'./components/**/*.{js,ts,jsx,tsx}', // Shared Components
+		'./pages/**/*.{js,ts,jsx,tsx}', // Pages Directory
+		'./styles/**/*.css', // Global CSS
+	],
 	theme: {
+		screens: {
+			xs: '480px', // Extra small screens
+			sm: '640px', // Small screens
+			md: '768px', // Medium screens
+			lg: '1024px', // Large screens
+			xl: '1280px', // Extra large screens
+			'2xl': '1536px', // Ultra large screens
+			'3xl': '1920px', // Ultra large screens
+		},
 		extend: {
 			colors: {
-				background: 'var(--background)',
-				foreground: 'var(--foreground)',
+				primary: 'var(--color-primary)', // Map primary color variable
+				secondary: 'var(--color-secondary)', // Map secondary color variable
+				background: 'var(--color-background)', // Map background color
+				backgroundReverse: 'var(--color-background-reverse)', // Map background reverse color
+				text: 'var(--color-text)', // Map text color
+				accent: 'var(--color-accent)', // Accent color
+				muted: 'var(--color-muted)', // Muted/gray text
 			},
 			fontFamily: {
-				baskervville: ['Baskervville', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+				trueLies: ['"True Lies"', 'sans-serif'],
 			},
-			screens: {
-				sm: '640px', // Small screens and up
-				md: '768px', // Medium screens and up
-				lg: '1080px', // Large screens and up
-				xl: '1475px', // Extra large screens and up
-				xxl: '2048px', // 2x Extra large screens and up
+			animation: {
+				pulse: 'pulse 2s infinite',
+			},
+			keyframes: {
+				pulse: {
+					'0%': { transform: 'scale(1)', color: '#d97706' },
+					'50%': { transform: 'scale(1.1)', color: '#ffffff' },
+					'100%': { transform: 'scale(1)', color: '#d97706' },
+				},
 			},
 		},
 	},
-	fontFamily: {
-		truelies: ['"True Lies"', 'sans-serif'],
-	},
-	typography: {
-		fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif',
-	},
-	plugins: [],
-} satisfies Config;
+	plugins: [
+		require('@tailwindcss/typography'), // Typography plugin
+		require('@tailwindcss/forms'), // Forms styling
+		require('@tailwindcss/aspect-ratio'), // Aspect ratio for images/videos
+		require('@tailwindcss/container-queries'), // Advanced responsive layouts
+	],
+};

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-// import Footer from './Footer';
+import Footer from './Footer';
 import './globals.css';
 import Header from './Header';
 
@@ -75,25 +75,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<head></head>
-			<body className="antialiased min-h-screen relative bg-cover bg-center bg-no-repeat">
-				{/* Fixed Header */}
-				<header className="fixed top-0 left-0 w-full z-20 h-auto bg-transparent">
+			<head />
+			<body className="antialiased h-screen flex flex-col bg-cover bg-center bg-no-repeat">
+				{/* Header */}
+				<header className="w-full z-20">
 					<Header />
 				</header>
 
-				{/* Main content area */}
-				<main
-					// className="w-[80%] m-auto pt-[100px] z-20"
-					className="min-h-screen overflow-hidden bg-no-repeat bg-fixed bg-black"
-				>
-					{children}
-				</main>
+				{/* Main content fills the remaining space */}
+				<main className="flex-1 overflow-hidden bg-black">{children}</main>
 
-				{/* Fixed Footer */}
-				{/* <footer className="bottom-0 left-0 w-full z-20">
+				{/* Footer */}
+				<footer className="w-full z-20">
 					<Footer />
-				</footer> */}
+				</footer>
 			</body>
 		</html>
 	);
