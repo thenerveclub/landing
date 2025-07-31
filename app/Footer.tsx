@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { FaDiscord, FaInstagram, FaTiktok } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaInstagram, FaTelegram, FaTiktok } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer: React.FC = () => {
@@ -26,6 +26,12 @@ const Footer: React.FC = () => {
 					</a>
 					<a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@thenerveclub" className="group" title="TikTok" aria-label="TikTok">
 						<FaTiktok className="w-6 h-6 fill-accent transition-transform group-hover:scale-110 group-hover:fill-accent" />
+					</a>
+					<a target="_blank" rel="noreferrer" href="https://github.com/thenerveclub" className="group" title="Github" aria-label="Github">
+						<FaGithub className="w-6 h-6 fill-accent transition-transform group-hover:scale-110 group-hover:fill-accent" />
+					</a>
+					<a target="_blank" rel="noreferrer" href="https://t.me/thenerveclub" className="group" title="Telegram" aria-label="Telegram">
+						<FaTelegram className="w-6 h-6 fill-accent transition-transform group-hover:scale-110 group-hover:fill-accent" />
 					</a>
 					<a target="_blank" rel="noreferrer" href="https://discord.gg/Xuh5enTNB6" className="group" title="Discord" aria-label="Discord">
 						<FaDiscord className="w-6 h-6 fill-accent transition-transform group-hover:scale-110 group-hover:fill-accent" />
